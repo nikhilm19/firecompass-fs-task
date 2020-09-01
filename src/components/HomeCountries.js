@@ -3,6 +3,13 @@ import ReactDOM from "react-dom";
 import _ from "lodash";
 import { Link } from "react-router-dom";
 import noodleImg from "../images/6.jpg";
+import img1 from "../images/1.jpg";
+import img2 from "../images/2.jpg";
+import img3 from "../images/3.jpg";
+import img4 from "../images/4.jpg";
+import img5 from "../images/5.jpg";
+
+const images = [img1, img2, img3, img4, img5];
 class HomeCountries extends React.Component {
   constructor(props) {
     super(props);
@@ -17,15 +24,26 @@ class HomeCountries extends React.Component {
     const countries = uniqueData.map((ramen, pos, arr) => {
       return (
         <div className="country-card">
-          <Link
-            to={`/country/${ramen.Country}`}
-            style={{
-              textDecorationStyle: "wavy",
-              color: "white",
-            }}
-          >
-            <h1>{ramen.Country}</h1>
-          </Link>
+          <img src={_.sample(images)} className="country-img" />
+          <div className="country-card-content">
+            <Link
+              to={`/country/${ramen.Country}`}
+              style={{
+                textDecoration: "none",
+                textDecorationStyle: "None",
+                color: "black",
+              }}
+            >
+              <div className="top-country">
+                <h2>{ramen.Country}</h2>
+              </div>
+
+              <div className="top-country-brand">
+                <div className="veg-non-veg"></div>
+                <h3>Top Brand:{ramen.Brand}</h3>
+              </div>
+            </Link>
+          </div>
         </div>
       );
     });

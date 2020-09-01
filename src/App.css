@@ -52,22 +52,82 @@ img.landing-img {
 
 .country-card {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   min-width: 80%;
   border-radius: 20px;
-
   margin-top: 2%;
-  min-height: 300px;
-  background-color: #f14e50;
-  transition: 0.8s;
+  min-height: 200px;
+  background-color: transparent;
+  transition: 0.5s;
   color: white;
 }
-.country-card:hover {
-  background-color: #14b1ab;
+.country-card > img:hover {
+  transform: translateZ(2px);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
+.country-card-content {
+  width: 90%;
+  margin-top: -15%;
+  height: 100px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  color: #900c3f;
+  font-size: 15px;
+}
+.country-card-content h3 {
+  color: rgb(194, 190, 190);
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 15px;
+}
+img.country-img {
+  width: 95%;
+  height: 200px;
+  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transition: 0.5s;
+}
+.top-country {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  font-family: "Balsamiq Sans", cursive;
+}
+.top-country-brand {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.veg-non-veg {
+  width: 10px;
+  height: 10px;
+  border: solid red 2px;
+  margin-right: 10px;
+  border-radius: 100%;
+  padding: 5px;
+}
+.veg-non-veg:before {
+  content: "";
+  display: block;
+  text-align: center;
+
+  height: 100%;
+  width: 100%;
+
+  border: red solid 0px;
+  background-color: red;
+  border-radius: 100%;
+}
 .top-brands--container {
   display: flex;
   flex-direction: column;
@@ -168,8 +228,9 @@ img.top-brand-img {
 }
 @media only screen and (min-width: 650px) {
   .country-card {
-    min-width: 31%;
+    min-width: 25%;
     margin-right: 2%;
+    max-width: 25%;
   }
   .top-brand-card {
     min-width: 310px;
