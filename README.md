@@ -17,12 +17,8 @@ This webapp is built using React.js
 
 ## SnapShots
 
-![Demo](demos/demo-noodles.gif?raw=true "Demo")
-
 ![Home](demos/home.png?raw=true "Home")
 
 ![Countries](demos/countries.png?raw=true "Countries")
 
 ![Top](demos/top.png?raw=true "top")
-
-![Search](demos/search.png?raw=true "Search")

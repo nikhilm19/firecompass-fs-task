@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import _ from "lodash";
 import { Link } from "react-router-dom";
 import noodleImg from "../images/6.jpg";
+import dataDb from "../data/mockDb";
 import img1 from "../images/1.jpg";
 import img2 from "../images/2.jpg";
 import img3 from "../images/3.jpg";
 import img4 from "../images/4.jpg";
 import img5 from "../images/5.jpg";
+import wave from "../images/wave.svg";
 
 const images = [img1, img2, img3, img4, img5];
 class HomeCountries extends React.Component {
@@ -16,8 +18,7 @@ class HomeCountries extends React.Component {
   }
 
   renderCountries = () => {
-    const data = JSON.parse(localStorage.getItem("data"));
-    console.log(localStorage.getItem("data"));
+    const data = dataDb;
     const uniqueData = _.uniqBy(data, "Country");
     console.log(uniqueData);
 
@@ -63,6 +64,7 @@ class HomeCountries extends React.Component {
             </div>
             <img src={noodleImg} className="landing-img App-logo" />
           </div>
+         
           <div className="landing-actions"></div>
         </div>
         <div className="countries">{this.renderCountries()}</div>

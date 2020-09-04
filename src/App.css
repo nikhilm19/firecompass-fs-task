@@ -1,5 +1,10 @@
 :root {
-  background-color: #fdd24b;
+  background: rgb(202, 40, 97);
+  background: linear-gradient(
+    102deg,
+    rgba(202, 40, 97, 1) 0%,
+    rgba(250, 125, 20, 1) 100%
+  );
 }
 
 .App {
@@ -10,6 +15,9 @@
 .home {
   padding: 5%;
   padding-top: 2%;
+  background-image: url("images/wave.svg");
+  background-repeat: no-repeat;
+  background-position-y: 20rem;
 }
 
 .landing {
@@ -30,12 +38,12 @@
   height: 100%;
 }
 .noodles {
-  color: #900c3f;
+  color: yellow;
 }
 .landing-text > h1 {
   font-size: 80px;
-  font-family: fantasy;
-  color: #ff5733;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
 }
 img.landing-img {
   width: 200px;
@@ -66,8 +74,8 @@ img.landing-img {
 }
 .country-card > img:hover {
   transform: translateZ(2px);
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.062),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(221, 25, 25, 0.459),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
@@ -156,12 +164,12 @@ img.country-img {
   margin: 10px;
 }
 .top-brand-card:hover {
-  background-color: #f14e50;
+  background-color: #faba14;
   transform: scale(1.2);
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 22.3px 17.9px rgba(211, 214, 29, 0.3),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 img.top-brand-img {
   width: 100%;

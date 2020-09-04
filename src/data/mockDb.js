@@ -1,4 +1,4 @@
-[
+const data = [
   {
     Brand: "MAMA",
     Variety: "Instant Noodles Coconut Milk Flavour",
@@ -296,3 +296,5 @@
     "Top Ten": "2012 #4",
   },
 ];
+
+export default data;
