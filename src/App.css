@@ -188,6 +188,9 @@ img.top-brand-img {
   padding: 10%;
   padding-top: 5%;
 }
+.top-brands::-webkit-scrollbar {
+  display: none;
+}
 
 .searchbar--container {
   display: flex;

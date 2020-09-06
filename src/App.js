@@ -7,13 +7,16 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends React.Component {
   async componentDidMount() {
-    if (!localStorage.getItem("data")) {
-      // const data = await axios.get("http://starlord.hackerearth.com/TopRamen");
+    // displayNotification();
+    Notification.requestPermission(function (status) {
+      console.log("Notification permission status:", status);
+      var notification = new Notification("Hi there!");
 
-      const data = dataDb;
-
-      localStorage.setItem("data", JSON.stringify(data.data));
-    }
+      navigator.serviceWorker.getRegistration().then(function (reg) {
+        reg.showNotification("Hello world!");
+      });
+    });
+    localStorage.setItem("data", JSON.stringify(dataDb));
   }
   render() {
     return (

@@ -6,7 +6,7 @@ import img2 from "../images/2.jpg";
 import img3 from "../images/3.jpg";
 import img4 from "../images/4.jpg";
 import img5 from "../images/5.jpg";
-
+import dataDb from "../data/mockDb";
 const images = [img1, img2, img3, img4, img5];
 class TopBrandsByCountry extends React.Component {
   constructor(props) {
@@ -20,6 +20,8 @@ class TopBrandsByCountry extends React.Component {
 
   onSubmit = async (term) => {
     console.log(term);
+
+    
     if (term === "") {
       this.setState({ filteredResults: this.state.topTenBrands });
     }
@@ -31,8 +33,9 @@ class TopBrandsByCountry extends React.Component {
     console.log(term);
   };
   filterTopBrands = () => {
-    const data = JSON.parse(localStorage.getItem("data"));
-    console.log(localStorage.getItem("data"));
+    // const data = JSON.parse(localStorage.getItem("data"));
+    // console.log(localStorage.getItem("data"));
+    const data = dataDb;
     const topBrands = data.filter((ramen, i, arr) => {
       return ramen.Country === this.props.match.params.cname;
     });
@@ -52,7 +55,7 @@ class TopBrandsByCountry extends React.Component {
       return (
         <div className="top-brand-card">
           <img
-          alt="top brand"
+            alt="top brand"
             src={_.sample(images)}
             className="top-brand-img"
           />

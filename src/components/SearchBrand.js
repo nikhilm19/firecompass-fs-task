@@ -29,7 +29,10 @@ class SearchBar extends React.Component {
                 id="searchInput"
                 type="text"
                 onSubmit={this.onFormSubmit}
-                onChange={(e) => this.setState({ term: e.target.value })}
+                onChange={(e) => {
+                  this.setState({ term: e.target.value });
+                  
+                }}
                 placeholder="Search Top Brands"
               ></input>
             </span>
