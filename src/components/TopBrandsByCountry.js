@@ -1,7 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import _ from "lodash";
-import { Link } from "react-router-dom";
 import SearchBrand from "./SearchBrand";
 import img1 from "../images/1.jpg";
 import img2 from "../images/2.jpg";
@@ -53,7 +51,11 @@ class TopBrandsByCountry extends React.Component {
     const ramens = this.state.filteredResults.map((ramen) => {
       return (
         <div className="top-brand-card">
-          <img src={_.sample(images)} className="top-brand-img" />
+          <img
+          alt="top brand"
+            src={_.sample(images)}
+            className="top-brand-img"
+          />
           <h1>{ramen.Country}</h1>
           {ramen["Top Ten"] !== "NaN" ? <p>{ramen["Top Ten"]}</p> : null}
           {ramen.Brand !== null ? <p>{ramen.Brand}</p> : null}

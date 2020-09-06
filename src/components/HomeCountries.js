@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import _ from "lodash";
 import { Link } from "react-router-dom";
 import noodleImg from "../images/6.jpg";
@@ -9,14 +8,8 @@ import img2 from "../images/2.jpg";
 import img3 from "../images/3.jpg";
 import img4 from "../images/4.jpg";
 import img5 from "../images/5.jpg";
-import wave from "../images/wave.svg";
-
 const images = [img1, img2, img3, img4, img5];
 class HomeCountries extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderCountries = () => {
     const data = dataDb;
     const uniqueData = _.uniqBy(data, "Country");
@@ -25,7 +18,7 @@ class HomeCountries extends React.Component {
     const countries = uniqueData.map((ramen, pos, arr) => {
       return (
         <div className="country-card">
-          <img src={_.sample(images)} className="country-img" />
+          <img alt="country " src={_.sample(images)} className="country-img" />
           <div className="country-card-content">
             <Link
               to={`/country/${ramen.Country}`}
@@ -62,9 +55,13 @@ class HomeCountries extends React.Component {
                 Yummy yum yum <span className="noodles">Noodles</span>
               </h1>
             </div>
-            <img src={noodleImg} className="landing-img App-logo" />
+            <img
+              alt="landing "
+              src={noodleImg}
+              className="landing-img App-logo"
+            />
           </div>
-         
+
           <div className="landing-actions"></div>
         </div>
         <div className="countries">{this.renderCountries()}</div>

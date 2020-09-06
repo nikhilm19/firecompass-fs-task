@@ -22,7 +22,7 @@ class SearchBar extends React.Component {
         <form className="searchbar-form" onChange={this.onFormSubmit}>
           <div className="searchbar-form--content">
             <div className="searchbar-form--icon">
-              <img src={SearchIcon} className=""></img>
+              <img alt="search icon" src={SearchIcon} className=""></img>
             </div>
             <span className="searchbar-form--input">
               <input
