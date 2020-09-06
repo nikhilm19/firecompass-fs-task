@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/firecompass-fs-task/precache-manifest.cb45f2c9d67ce722f7ed12c792a76acd.js"
+  "/firecompass-fs-task/precache-manifest.53048c84341b54bed558f0e329a1ccc7.js"
 );
 
 self.addEventListener('message', (event) => {
