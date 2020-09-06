@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/firecompass-fs-task/static/css/main.32b1287f.chunk.css",
+    "main.js": "/firecompass-fs-task/static/js/main.cd0b0366.chunk.js",
+    "main.js.map": "/firecompass-fs-task/static/js/main.cd0b0366.chunk.js.map",
+    "runtime-main.js": "/firecompass-fs-task/static/js/runtime-main.f028dfaa.js",
+    "runtime-main.js.map": "/firecompass-fs-task/static/js/runtime-main.f028dfaa.js.map",
+    "static/js/2.2548926a.chunk.js": "/firecompass-fs-task/static/js/2.2548926a.chunk.js",
+    "static/js/2.2548926a.chunk.js.map": "/firecompass-fs-task/static/js/2.2548926a.chunk.js.map",
+    "index.html": "/firecompass-fs-task/index.html",
+    "precache-manifest.cb45f2c9d67ce722f7ed12c792a76acd.js": "/firecompass-fs-task/precache-manifest.cb45f2c9d67ce722f7ed12c792a76acd.js",
+    "service-worker.js": "/firecompass-fs-task/service-worker.js",
+    "static/css/main.32b1287f.chunk.css.map": "/firecompass-fs-task/static/css/main.32b1287f.chunk.css.map",
+    "static/js/2.2548926a.chunk.js.LICENSE.txt": "/firecompass-fs-task/static/js/2.2548926a.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/firecompass-fs-task/static/media/1.ec1ce54f.jpg",
+    "static/media/2.jpg": "/firecompass-fs-task/static/media/2.765b9ad3.jpg",
+    "static/media/3.jpg": "/firecompass-fs-task/static/media/3.68285dd7.jpg",
+    "static/media/4.jpg": "/firecompass-fs-task/static/media/4.4f15f244.jpg",
+    "static/media/5.jpg": "/firecompass-fs-task/static/media/5.2cf55fea.jpg",
+    "static/media/6.jpg": "/firecompass-fs-task/static/media/6.b57f6120.jpg",
+    "static/media/logo.svg": "/firecompass-fs-task/static/media/logo.5d5d9eef.svg",
+    "static/media/wave.svg": "/firecompass-fs-task/static/media/wave.3ad55186.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f028dfaa.js",
+    "static/js/2.2548926a.chunk.js",
+    "static/css/main.32b1287f.chunk.css",
+    "static/js/main.cd0b0366.chunk.js"
+  ]
+}
