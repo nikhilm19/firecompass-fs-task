@@ -27,9 +27,9 @@
       PB.events = PB.events || [];
 
       //PushBots ApplicationId (required)
-      PB.app_id = "5f54d2345d0c5b121961ef68";
+      PB.app_id = "5f54df86184a7d3e237959f3";
       //Your domain name, must be HTTPS or localhost  (required)
-      PB.domain = "https://nikhilm19.tech/";
+      PB.domain = "https://unruffled-wiles-ef2a56.netlify.app";
       //Update and uncomment it if you are using custom safari certificate for your app
       PB.safari_push_id = "web.com.pushbots.safaripush";
       //****************************************
@@ -44,7 +44,7 @@
       PB.welcome = {
         title: "Welcome ",
         message: "Thanks for subscribing!",
-        url: PB.domain + "/pushbots-worker.js",
+        url: PB.domain,
       };
 
       function sendNotification() {
@@ -54,11 +54,10 @@
           {
             title: "Hey ",
             message: "Why not?",
-            url: "https://nikhilm19.tech/firecompass-fs-task/",
+            url: "https://unruffled-wiles-ef2a56.netlify.app",
           },
         ]);
       }
-      sendNotification();
     </script>
 
     <script
